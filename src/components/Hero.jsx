@@ -37,7 +37,7 @@ export default function Hero() {
         <motion.img
   src="Foto_Alejandro.jpeg"
   alt="Alejandro"
-  className="mt-8 w-68 h-80 rounded-2xl grayscale-[75%]"
+  className="mt-8 w-68 h-80 rounded-2xl grayscale-[45%]"
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}

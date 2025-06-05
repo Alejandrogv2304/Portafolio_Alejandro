@@ -6,16 +6,16 @@ export default function Navbar() {
 
   return (
     <>
-      <header className='flex justify-around p-4 font-system text-md font-semibold items-center'>
+      <header className='bg-white flex justify-around p-4 font-system text-md font-semibold items-center fixed top-0 w-full z-50'>
         {/* Logo - igual que antes */}
         <img src="https://img.icons8.com/ios/50/artstation.png" alt="logo-web"/>
         
         <nav className='flex'>
             <ul className='text-black hidden lg:flex gap-4 '>
-                <li><a className='hover:border-b-2' href="#home">Inicio</a></li>
-                <li><a className='hover:border-b-2'href="#about">Sobre mí</a></li>
-                <li><a className='hover:border-b-2' href="#projects">Proyectos</a></li>
-                <li><a className='hover:border-b-2' href="#contact">Contacto</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#home">Inicio</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110'href="#about">Sobre mí</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#projects">Proyectos</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#contact">Contacto</a></li>
             </ul>
         </nav>
 
@@ -37,10 +37,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="lg:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-start space-y-6 mt-16">
             <ul className='text-center space-y-6'>
-              <li><a className='hover:border-b-2 text-xl py-2 block' href="#home" onClick={() => setIsMenuOpen(false)}>Inicio</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block' href="#about" onClick={() => setIsMenuOpen(false)}>Sobre mí</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block' href="#projects" onClick={() => setIsMenuOpen(false)}>Proyectos</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block' href="#contact" onClick={() => setIsMenuOpen(false)}>Contacto</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#home" onClick={() => setIsMenuOpen(false)}>Inicio</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#about" onClick={() => setIsMenuOpen(false)}>Sobre mí</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#projects" onClick={() => setIsMenuOpen(false)}>Proyectos</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#contact" onClick={() => setIsMenuOpen(false)}>Contacto</a></li>
             </ul>
             
             <a 
