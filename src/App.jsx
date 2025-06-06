@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Experiencia from './components/Experiencia'
 import SobreMi from './components/SobreMi'
+import Proyectos from './components/Proyectos'
 
 
 
@@ -17,6 +18,7 @@ function App() {
      <Skills/>
      <Experiencia/>
      <SobreMi/>
+     <Proyectos/>
     </>
   )
 }
