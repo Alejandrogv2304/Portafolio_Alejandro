@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Experiencia from './components/Experiencia'
+import SobreMi from './components/SobreMi'
 
 
 
@@ -15,6 +16,7 @@ function App() {
      <Hero/>
      <Skills/>
      <Experiencia/>
+     <SobreMi/>
     </>
   )
 }
