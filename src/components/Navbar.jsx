@@ -19,7 +19,8 @@ export default function Navbar() {
             </ul>
         </nav>
 
-        <a className="hidden lg:inline relative text-black no-underline border-2 border-black shadow-[6px_4px_0px_#000] px-4 py-2 hover:bg-black hover:text-white" href="#">Resume <IconDownload className="inline w-5 h-5 ml-2" /></a>
+        <a className="hidden lg:inline relative text-black no-underline border-2 border-black shadow-[6px_4px_0px_#000] px-4 py-2
+         hover:bg-black hover:text-white" href="/hoja_de_vida_Alejandro_Gomez.pdf" download>Resume <IconDownload className="inline w-5 h-5 ml-2" /></a>
         
 
         {/* Botón Hamburguesa (nuevo) */}
@@ -45,7 +46,7 @@ export default function Navbar() {
             
             <a 
               className="relative text-black no-underline border-2 border-black shadow-[6px_4px_0px_#000] px-6 py-2 hover:bg-black hover:text-white mt-4" 
-              href="#"
+              href="/hoja_de_vida_Alejandro_Gomez.pdf" download
               onClick={() => setIsMenuOpen(false)}
             >
               Resume <IconDownload className="inline w-10 h-10 ml-2" />

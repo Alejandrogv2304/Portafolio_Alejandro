@@ -13,12 +13,17 @@ export default function Hero() {
             Hola, <span className='font-bold'>Soy Alejandro Gómez Desarrollador Full-Stack</span>
         </h1>
           
-        <p className=' mb-4 text-xl text-gray-500'>
+        <motion.p 
+        initial={{ opacity: 0.1, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className=' mb-4 text-xl text-gray-500'>
             Apasionado por la tecnología, me especializo en el desarrollo web.<br/>
             Me enfocó en contruir soluciones prácticas que ofrezcan una experiencia<br/>
             agradable a los usuarios. Mi meta es crecer en el campo del desarrollo web<br/>
             y su integración con el Internet de las cosas.<br/>
-        </p>
+        </motion.p>
         <div className='flex mt-2 gap-2'>
          <a className='hover:bg-black hover:text-white border-2 border-black h-12 w-12 justify-center flex items-center' href="mailto:alejandrogv1011@example.com" target="_blank" rel="noopener noreferrer">
         <MdOutlineEmail className='text-2xl'/>
@@ -39,7 +44,8 @@ export default function Hero() {
   alt="Alejandro"
   className="mt-8 w-68 h-80 rounded-2xl grayscale-[45%]"
   initial={{ opacity: 0, y: 50 }}
-  animate={{ opacity: 1, y: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.3 }}
   transition={{ duration: 1, ease: "easeOut" }}
 /> 
         </div>
