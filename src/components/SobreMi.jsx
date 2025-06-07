@@ -20,7 +20,7 @@ export default function SobreMi() {
        {/* Texto con animación */}
       <div className='lg:w-1/2'>
   <motion.h2
-    className='lg:text-4xl text-2xl mt-4 lg:mt-0'
+    className='lg:text-4xl text-2xl mt-4 lg:mt-0 text-center md:text-left'
     initial={{ opacity: 0, x: 50 }}
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: false, amount: 0.3 }}

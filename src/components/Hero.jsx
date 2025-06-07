@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 pt-20 pr-10 pb-0 pl-20 items-center'>
         <div className='grid items-start grid-cols-1 justify-center'>
-        <h1 className='font-semibold text-4xl mb-4'>
+        <h1 className='font-semibold text-4xl mb-4 mt-8 lg:mt-0'>
             Hola, <span className='font-bold'>Soy Alejandro Gómez Desarrollador Full-Stack</span>
         </h1>
           
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
         
         </div>
-        <div className='flex justify-center gap-4'>
+        <div className='flex justify-center gap-4 mb-8 md:mb-0'>
         <motion.img
   src="Foto_Alejandro.jpeg"
   alt="Alejandro"
