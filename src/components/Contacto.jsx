@@ -1,28 +1,55 @@
-import React from 'react'
+import React,{useRef, useState} from 'react'
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt,FaGithubSquare,FaLinkedin  } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import emailjs from '@emailjs/browser';
 
 export default function Contacto() {
+
+  const form = useRef();
+  const [mensaje, setMensaje] = useState('');
+const [tipoMensaje, setTipoMensaje] = useState(''); 
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_6zr933i', 'template_9hbump5', form.current, 'fXfxce7HqG5lVwIqp')
+    .then((result) => {
+        setMensaje('✅ Mensaje enviado correctamente');
+        setTipoMensaje('exito');
+        form.current.reset();
+        setTimeout(() => {
+        setMensaje('');
+        }, 2000);
+    }, (error) => {
+        setMensaje('❌ Ocurrió un error al enviar el mensaje');
+        setTipoMensaje('error');
+        console.log(error.text);
+        setTimeout(() => {
+        setMensaje('');
+        }, 2000);
+    });
+};
+
+ 
   return (
     <div className='lg:my-16 lg:px-28 my-8 px-5' id='contacto'>
       <h2 className='text-2xl lg:text-4xl text-center font-extrabold'>Contáctame</h2>
       <div className='flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
         <div className='lg:w-[40%]'>
-            <form className='w-full space-y-3 lg:space-y-5'>
+            <form className='w-full space-y-3 lg:space-y-5' ref={form} onSubmit={sendEmail}>
                 <input type="text" 
                 className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' 
-                placeholder='Tú Nombre' required/>
-                <input type="text" 
+                placeholder='Tú Nombre' name='Nombre' required/>
+                <input type="email" 
                 className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full'
-                placeholder='Tú Correo' required/>
+                placeholder='Tú Correo' name='Correo' required/>
                 <input type="text" 
                 className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full'
                 placeholder='Tú Número'
-                required/>
+                name='Numero' required/>
                 <textarea className='resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A]  rounded text-sm w-full'
-                 placeholder='¿Cómo puedo ayudarte?'></textarea>
+                 placeholder='¿Cómo puedo ayudarte?' name='Mensaje' required></textarea>
               
               <div className='flex justify-between gap-3 lg:gap-5 flex-col lg:flex-row'>
                 <button className='bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium hover:text-green-400'
@@ -40,6 +67,11 @@ export default function Contacto() {
                 </div>
               </div>
             </form>
+            {mensaje && (
+  <p className={`mt-3 text-sm font-medium ${tipoMensaje === 'exito' ? 'text-green-600' : 'text-red-600'}`}>
+    {mensaje}
+  </p>
+)}
         </div>
         <div className='lg:w-1/2'>
         <div className='font-extrabold text-2xl lg:text-5xl mt-5 lg:mt-0 space-y-1 lg:space-y-3'>
