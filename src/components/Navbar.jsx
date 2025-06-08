@@ -38,10 +38,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="lg:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-start space-y-6 mt-16">
             <ul className='text-center space-y-6'>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#home" onClick={() => setIsMenuOpen(false)}>Inicio</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#about" onClick={() => setIsMenuOpen(false)}>Sobre mí</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#projects" onClick={() => setIsMenuOpen(false)}>Proyectos</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#contact" onClick={() => setIsMenuOpen(false)}>Contacto</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#skills" onClick={() => setIsMenuOpen(false)}>Inicio</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#sobremi" onClick={() => setIsMenuOpen(false)}>Sobre mí</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#proyectos" onClick={() => setIsMenuOpen(false)}>Proyectos</a></li>
+              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-200 hover:scale-110' href="#contacto" onClick={() => setIsMenuOpen(false)}>Contacto</a></li>
             </ul>
             
             <a 

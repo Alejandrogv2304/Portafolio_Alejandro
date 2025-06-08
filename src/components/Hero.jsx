@@ -18,7 +18,7 @@ export default function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className=' mb-4 text-xl text-gray-500'>
+        className=' mb-4 text-xl text-gray-500 text-justify'>
             Apasionado por la tecnología, me especializo en el desarrollo web.<br/>
             Me enfocó en contruir soluciones prácticas que ofrezcan una experiencia<br/>
             agradable a los usuarios. Mi meta es crecer en el campo del desarrollo web<br/>
