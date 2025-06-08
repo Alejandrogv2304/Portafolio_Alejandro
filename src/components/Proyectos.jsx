@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Proyectos() {
   return (
-    <div className='bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16'>
+    <div className='bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16' id='proyectos'>
         <h2 className='text-2xl lg:text-4xl text-center text-white'>Mis <span className='font-extrabold'>Proyectos</span></h2>
         <div className='lg:mt-16 mt-8 lg:space-y-16 space-y-8 lg:pb-6 pb-3'>
             <div className='flex justify-between items-center flex-col lg:flex-row'>

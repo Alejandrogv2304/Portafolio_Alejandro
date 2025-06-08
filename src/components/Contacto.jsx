@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Contacto() {
   return (
-    <div className='lg:my-16 lg:px-28 my-8 px-5'>
+    <div className='lg:my-16 lg:px-28 my-8 px-5' id='contacto'>
       <h2 className='text-2xl lg:text-4xl text-center font-extrabold'>Contáctame</h2>
       <div className='flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
         <div className='lg:w-[40%]'>
@@ -68,6 +68,7 @@ export default function Contacto() {
             </a>
         </div>
         </div>
+
       </div>
     </div>
   )

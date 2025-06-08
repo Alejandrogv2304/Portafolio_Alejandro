@@ -12,10 +12,10 @@ export default function Navbar() {
         
         <nav className='flex'>
             <ul className='text-black hidden lg:flex gap-4 '>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#home">Inicio</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110'href="#about">Sobre mí</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#projects">Proyectos</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#contact">Contacto</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#skills">Inicio</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110'href="#sobremi">Sobre mí</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#proyectos">Proyectos</a></li>
+                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function SobreMi() {
   return (
-    <div className='px-5 lg:px-28 flex justify-between flex-col lg:flex-row mb-8'>
+    <div className='px-5 lg:px-28 flex justify-between flex-col lg:flex-row mb-8' id='sobremi'>
         <div className='lg:w-1/2 grid place-items-center'>
         <motion.img
           src="Foto_Portafolio_2.jpeg"
