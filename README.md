@@ -44,7 +44,7 @@ Si quieres colaborar, contratarme o simplemente darme un consejo, puedes escribi
 
 El portafolio está desplegado en **Netlify**, con integración continua desde GitHub.
 
-👉 [Ver en línea](https://tu-url-en-netlify.netlify.app)
+👉 [Ver en línea](https://portafolioalejandrogomez.netlify.app)
 
 ---
 
